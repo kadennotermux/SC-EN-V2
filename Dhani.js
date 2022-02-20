@@ -776,7 +776,7 @@ case 'sourcode':
 case 'sourcodebot':
 menu = `Please stop by and don't forget to subscribe, like, comment, share.
 ${command} will continue to update, so stop by so you don't miss it
-https://youtube.com/channel/UCcnWMxH0nUbArCCkqubUeHA`
+https://youtube.com`
 reply(menu)
 break
 case 'cecan':
