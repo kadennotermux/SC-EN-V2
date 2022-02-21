@@ -84,22 +84,22 @@ let waktu = d.toLocaleDateString(locale, { hour: 'numeric', minute: 'numeric', s
 
 
 if(waktu < "23:59:00"){
-var sayingtime = '𝘎𝘰𝘰𝘥 𝘯𝘪𝘨𝘩𝘵🌌'
+var sayingtime = 'Have a 𝘎𝘰𝘰𝘥 𝘯𝘪𝘨𝘩𝘵🌌'
 }
 if(waktu < "19:00:00"){
-var sayingtime = '𝘏𝘢𝘷𝘦 𝘢 𝘨𝘰𝘰𝘥 𝘯𝘪𝘨𝘩𝘵🌆'
+var sayingtime = 'Have a Nice supper🌆'
 }
 if(waktu < "18:00:00"){
-var sayingtime = '𝘎𝘰𝘰𝘥 𝘢𝘧𝘵𝘦𝘳𝘯𝘰𝘰𝘯🌇'
+var sayingtime = '𝘎𝘰𝘰𝘥 Evening🌇'
 }
 if(waktu < "15:00:00"){
-var sayingtime = '𝘎𝘰𝘰𝘥 𝘋𝘢𝘺🏞'
+var sayingtime = '𝘎𝘰𝘰𝘥 Afternoon🏞'
 }
 if(waktu < "11:00:00"){
 var sayingtime = '𝘎𝘰𝘰𝘥 𝘮𝘰𝘳𝘯𝘪𝘯𝘨🌅'
 }
 if(waktu < "05:00:00"){
-var sayingtime = '𝘎𝘰𝘰𝘥 𝘯𝘪𝘨𝘩𝘵🏙'
+var sayingtime = '𝘎𝘰𝘰𝘥 Evening🏙'
 }
 
 //━━━━[ Module Exports ]━━━━//
@@ -496,22 +496,22 @@ menu =`Hi ${pushname} ${sayingtime}
 
 
 ╭─⬣ 「 TODAY 」 ⬣
-│🔖 ${date}
-│🔖 ${waktu}
-│🔖 ${sayingtime}
+│📅 ${date}
+│⌚ ${waktu}
+│⌚ ${sayingtime}
 └⬣
 
 ╭─⬣ 「 INFO BOT 」 ⬣
-│🔖 Bot name : ${botname}
-│🔖 Owner name : ${ownername}
-│🔖 Owner number : @${owner2.split("@")[0]}
-│🔖 Runtime : ${runtime(process.uptime())}
-│🔖 Speed : ${latensie.toFixed(4)} second
+│🤖 *Bot name* : ${botname}
+│👩‍✈️ *Owner name* : ${ownername}
+│☎️ *Owner number* : @${owner2.split("@")[0]}
+│⏱️ *Runtime* : ${runtime(process.uptime())}
+│⏰ *Speed* : ${latensie.toFixed(4)} second
 └⬣
 
 ╭─⬣ 「 INFO USER 」 ⬣
-│🔖 User name : ${pushname}
-│🔖 User number : @${senderr.split("@")[0]}
+│👦 User name : ${pushname}
+│☎️ User number : @${senderr.split("@")[0]}
 └⬣`
 Dhani.sendMessage(from, { contentText: `${menu}`, footerText: `*_© ${ownername} || 2022_*`, buttons: [{ buttonId: `${prefix}allmenu`, buttonText: { displayText: '𝘼𝙇𝙇𝙈𝙀𝙉𝙐' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: '𝙊𝙒𝙉𝙀𝙍' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [senderr,owner2]}}}, 'buttonsMessage')
 break
@@ -520,249 +520,249 @@ menu =`Hi @${senderr.split("@")[0]} ${sayingtime}
 
 
 ╭─❒ *⌜ INFO MENU ⌟* ❒
-├ ㋡ ${prefix}runtime
-├ ㋡ ${prefix}speed
-├ ㋡ ${prefix}rules
-├ ㋡ ${prefix}script
-├ ㋡ ${prefix}ssweb *Url*
-├ ㋡ ${prefix}delete *Reply to bot messages*
+├ 🔰 ${prefix}runtime
+├ 🔰 ${prefix}speed
+├ 🔰 ${prefix}rules
+├ 🔰 ${prefix}script
+├ 🔰 ${prefix}ssweb *Url*
+├ 🔰 ${prefix}delete *Reply to bot messages*
 └❏
 
 ╭─❒ *⌜ GROUP MENU ⌟* ❒
-├ ㋡ ${prefix}antilink *on / off*
-├ ㋡ ${prefix}welcome *on / off*
-├ ㋡ ${prefix}antivirtex *on / off*
-├ ㋡ ${prefix}promote *@tag*
-├ ㋡ ${prefix}demote *@tag*
-├ ㋡ ${prefix}add *628xxxx*
-├ ㋡ ${prefix}kick *@tag / Reply*
-├ ㋡ ${prefix}setppgroup *Reply Image*
-├ ㋡ ${prefix}setdesc *Text*
-├ ㋡ ${prefix}setname *Text*
-├ ㋡ ${prefix}hidetag *Text*
-├ ㋡ ${prefix}linkgroup
-├ ㋡ ${prefix}listonline
-├ ㋡ ${prefix}resetlinkgroup
-├ ㋡ ${prefix}tagall
-├ ㋡ ${prefix}infogroup
-├ ㋡ ${prefix}open
-├ ㋡ ${prefix}close
-├ ㋡ ${prefix}tagme
-├ ㋡ ${prefix}leave
+├ 🔰 ${prefix}antilink *on / off*
+├ 🔰 ${prefix}welcome *on / off*
+├ 🔰 ${prefix}antivirtex *on / off*
+├ 🔰 ${prefix}promote *@tag*
+├ 🔰 ${prefix}demote *@tag*
+├ 🔰 ${prefix}add *628xxxx*
+├ 🔰 ${prefix}kick *@tag / Reply*
+├ 🔰 ${prefix}setppgroup *Reply Image*
+├ 🔰 ${prefix}setdesc *Text*
+├ 🔰 ${prefix}setname *Text*
+├ 🔰 ${prefix}hidetag *Text*
+├ 🔰 ${prefix}linkgroup
+├ 🔰 ${prefix}listonline
+├ 🔰 ${prefix}resetlinkgroup
+├ 🔰 ${prefix}tagall
+├ 🔰 ${prefix}infogroup
+├ 🔰 ${prefix}open
+├ 🔰 ${prefix}close
+├ 🔰 ${prefix}tagme
+├ 🔰 ${prefix}leave
 └❏
 
 ╭─❒ *⌜ DOWNLOADER MENU ⌟* ❒
-├ ㋡ ${prefix}ytmp3 *Link*
-├ ㋡ ${prefix}ytmp4 *Link*
-├ ㋡ ${prefix}tiktok *Link*
-├ ㋡ ${prefix}tiktokwm *Link*
-├ ㋡ ${prefix}tiktoknowm *Link*
-├ ㋡ ${prefix}tiktokaudio *Link*
-├ ㋡ ${prefix}instagram *Link*
-├ ㋡ ${prefix}mediafire *Link*
+├ 🔰 ${prefix}ytmp3 *Link*
+├ 🔰 ${prefix}ytmp4 *Link*
+├ 🔰 ${prefix}tiktok *Link*
+├ 🔰 ${prefix}tiktokwm *Link*
+├ 🔰 ${prefix}tiktoknowm *Link*
+├ 🔰 ${prefix}tiktokaudio *Link*
+├ 🔰 ${prefix}instagram *Link*
+├ 🔰 ${prefix}mediafire *Link*
 └❏
 
 ╭─❒ *⌜ STICKER MENU ⌟* ❒
-├ ㋡ ${prefix}sticker *Reply Image*
-├ ㋡ ${prefix}toimg *Reply Sticker*
+├ 🔰 ${prefix}sticker *Reply Image*
+├ 🔰 ${prefix}toimg *Reply Sticker*
 └❏
 
 ╭─❒ *⌜ RANDOM IMAGE ⌟* ❒
-├ ㋡ ${prefix}ppcouple
-├ ㋡ ${prefix}meme
+├ 🔰 ${prefix}ppcouple
+├ 🔰 ${prefix}meme
 └❏
 
 ╭─❒ *⌜ WALLPAPERS MENU ⌟* ❒
-├ ㋡ ${prefix}wallpaperhacker
-├ ㋡ ${prefix}wallpaperhacker2
-├ ㋡ ${prefix}wallpaperharley
-├ ㋡ ${prefix}wallpaperjoker
-├ ㋡ ${prefix}wallpaperpubg
-├ ㋡ ${prefix}wallpaperhp
-├ ㋡ ${prefix}wallpaperhp2
-├ ㋡ ${prefix}wallpaperkpop
-├ ㋡ ${prefix}wallpaperblackpink
-├ ㋡ ${prefix}wallpapergame
+├ 🔰 ${prefix}wallpaperhacker
+├ 🔰 ${prefix}wallpaperhacker2
+├ 🔰 ${prefix}wallpaperharley
+├ 🔰 ${prefix}wallpaperjoker
+├ 🔰 ${prefix}wallpaperpubg
+├ 🔰 ${prefix}wallpaperhp
+├ 🔰 ${prefix}wallpaperhp2
+├ 🔰 ${prefix}wallpaperkpop
+├ 🔰 ${prefix}wallpaperblackpink
+├ 🔰 ${prefix}wallpapergame
 └❏
 
 ╭─❒ ⌜ ASUPAN MENU ⌟ ❒
-├ ㋡ ${prefix}hijaber
-├ ㋡ ${prefix}asupan
-├ ㋡ ${prefix}asupanloli
-├ ㋡ ${prefix}asupanbocil
-├ ㋡ ${prefix}asupanrika
-├ ㋡ ${prefix}asupansantuy
-├ ㋡ ${prefix}asupanukhty
-├ ㋡ ${prefix}asupangheayubi
-├ ㋡ ${prefix}asupannantalia
+├ 🔰 ${prefix}hijaber
+├ 🔰 ${prefix}asupan
+├ 🔰 ${prefix}asupanloli
+├ 🔰 ${prefix}asupanbocil
+├ 🔰 ${prefix}asupanrika
+├ 🔰 ${prefix}asupansantuy
+├ 🔰 ${prefix}asupanukhty
+├ 🔰 ${prefix}asupangheayubi
+├ 🔰 ${prefix}asupannantalia
 └❏
 
 ╭─❒ *⌜ CECAN MENU ⌟* ❒
-├ ㋡ ${prefix}cecan
-├ ㋡ ${prefix}cogan
-├ ㋡ ${prefix}cecan2
-├ ㋡ ${prefix}cogan2
-├ ㋡ ${prefix}jeni
-├ ㋡ ${prefix}jiso
-├ ㋡ ${prefix}justina
-├ ㋡ ${prefix}lisa
-├ ㋡ ${prefix}rose
-├ ㋡ ${prefix}ryujin
-├ ㋡ ${prefix}cecanindonesia
-├ ㋡ ${prefix}cecanvietnam
-├ ㋡ ${prefix}cecanthailand
-├ ㋡ ${prefix}cecankorea
-├ ㋡ ${prefix}cecanchina
-├ ㋡ ${prefix}cecanjapan
-├ ㋡ ${prefix}cecanmalaysia
+├ 🔰 ${prefix}cecan
+├ 🔰 ${prefix}cogan
+├ 🔰 ${prefix}cecan2
+├ 🔰 ${prefix}cogan2
+├ 🔰 ${prefix}jeni
+├ 🔰 ${prefix}jiso
+├ 🔰 ${prefix}justina
+├ 🔰 ${prefix}lisa
+├ 🔰 ${prefix}rose
+├ 🔰 ${prefix}ryujin
+├ 🔰 ${prefix}cecanindonesia
+├ 🔰 ${prefix}cecanvietnam
+├ 🔰 ${prefix}cecanthailand
+├ 🔰 ${prefix}cecankorea
+├ 🔰 ${prefix}cecanchina
+├ 🔰 ${prefix}cecanjapan
+├ 🔰 ${prefix}cecanmalaysia
 └❏
 
 ╭─❒ ⌜ TEXTPRO MENU ⌟ ❒
-├ ㋡ ${prefix}blackpink *Text*
-├ ㋡ ${prefix}halloween *Text*
-├ ㋡ ${prefix}halloween2 *Text*
-├ ㋡ ${prefix}3dgradient *Text*
-├ ㋡ ${prefix}naturalleaves *Text*
-├ ㋡ ${prefix}dropwater *Text*
-├ ㋡ ${prefix}blood *Text*
-├ ㋡ ${prefix}blood2 *Text*
-├ ㋡ ${prefix}snow *Text*
-├ ㋡ ${prefix}cloud *Text*
-├ ㋡ ${prefix}neondevil *Text*
-├ ㋡ ${prefix}neon *Text*
-├ ㋡ ${prefix}glowingneonlight *Text*
-├ ㋡ ${prefix}neonlightglitch *Text*
-├ ㋡ ${prefix}neonlightonbrickwall *Text*
-├ ㋡ ${prefix}neonlight *Text*
-├ ㋡ ${prefix}neonlight2 *Text*
-├ ㋡ ${prefix}neonlight3 *Text*
-├ ㋡ ${prefix}greenneon *Text*
-├ ㋡ ${prefix}toxic *Text*
-├ ㋡ ${prefix}matrix *Text*
-├ ㋡ ${prefix}thunder *Text*
-├ ㋡ ${prefix}thunder2 *Text*
-├ ㋡ ${prefix}bokeh *Text*
-├ ㋡ ${prefix}carbontext *Text*
-├ ㋡ ${prefix}christmas *Text*
-├ ㋡ ${prefix}breakwall *Text*
-├ ㋡ ${prefix}roadwarning *Text*
-├ ㋡ ${prefix}engraved3d *Text*
-├ ㋡ ${prefix}embossed *Text*
-├ ㋡ ${prefix}3dstone *Text*
-├ ㋡ ${prefix}futuristic *Text*
-├ ㋡ ${prefix}sketch *Text*
-├ ㋡ ${prefix}bluecircuit *Text*
-├ ㋡ ${prefix}space *Text*
-├ ㋡ ${prefix}magmahot *Text*
-├ ㋡ ${prefix}artpapercut *Text*
-├ ㋡ ${prefix}3dluxurygold *Text*
-├ ㋡ ${prefix}robotr2d2 *Text*
-├ ㋡ ${prefix}harrypotter *Text*
-├ ㋡ ${prefix}glitch3 *Text*
-├ ㋡ ${prefix}greenhorror *Text*
-├ ㋡ ${prefix}horrorgift *Text*
-├ ㋡ ${prefix}hotmetal *Text*
-├ ㋡ ${prefix}erodedmetal *Text*
-├ ㋡ ${prefix}3dglowingmetal *Text*
-├ ㋡ ${prefix}blackmetal *Text*
-├ ㋡ ${prefix}bluemetal *Text*
-├ ㋡ ${prefix}shynimetal *Text*
-├ ㋡ ${prefix}rustymetal *Text*
-├ ㋡ ${prefix}metalpurple *Text*
-├ ㋡ ${prefix}metalrainbow *Text*
-├ ㋡ ${prefix}metaldarkgold *Text*
-├ ㋡ ${prefix}colorfullluxurymetal *Text*
-├ ㋡ ${prefix}glossybluemetal *Text*
-├ ㋡ ${prefix}3dglossymetal *Text*
-├ ㋡ ${prefix}metallic *Text*
-├ ㋡ ${prefix}glossymetallic *Text*
-├ ㋡ ${prefix}christmastree *Text*
-├ ㋡ ${prefix}sparklesmerrychristmas *Text*
-├ ㋡ ${prefix}countryflag3d *Text*
-├ ㋡ ${prefix}americanflag3d *Text*
-├ ㋡ ${prefix}3dscfi *Text*
-├ ㋡ ${prefix}3drainbow *Text*
-├ ㋡ ${prefix}3dwaterpipe *Text*
-├ ㋡ ${prefix}3dchrome *Text*
-├ ㋡ ${prefix}bluegem *Text*
-├ ㋡ ${prefix}purplegem *Text*
-├ ㋡ ${prefix}pinkcandy *Text*
-├ ㋡ ${prefix}transformer *Text*
-├ ㋡ ${prefix}berry *Text*
-├ ㋡ ${prefix}brokenglass *Text*
-├ ㋡ ${prefix}3drealistic *Text*
-├ ㋡ ${prefix}3dunderwater *Text*
-├ ㋡ ${prefix}writeinsandsummerbeach *Text*
-├ ㋡ ${prefix}sandwriting *Text*
-├ ㋡ ${prefix}foilballoon *Text*
-├ ㋡ ${prefix}3dglue *Text*
-├ ㋡ ${prefix}1917 *Text*
-├ ㋡ ${prefix}minion *Text*
-├ ㋡ ${prefix}doubleexposure *Text*
-├ ㋡ ${prefix}holographic3d *Text*
-├ ㋡ ${prefix}deluxegold *Text*
-├ ㋡ ${prefix}deluxesilver *Text*
-├ ㋡ ${prefix}glossycarbon *Text*
-├ ㋡ ${prefix}fabric *Text*
-├ ㋡ ${prefix}xmascards3d *Text*
-├ ㋡ ${prefix}wicker *Text*
-├ ㋡ ${prefix}fireworksparkle *Text*
-├ ㋡ ${prefix}skeleton *Text*
-├ ㋡ ${prefix}ultragloss *Text*
-├ ㋡ ${prefix}denim *Text*
-├ ㋡ ${prefix}decorategreen *Text*
-├ ㋡ ${prefix}peridot *Text*
-├ ㋡ ${prefix}rock *Text*
-├ ㋡ ${prefix}lava *Text*
-├ ㋡ ${prefix}rainbowequalizer *Text*
-├ ㋡ ${prefix}purpleglass *Text*
-├ ㋡ ${prefix}decorativeglass *Text*
-├ ㋡ ${prefix}chocolatecake *Text*
-├ ㋡ ${prefix}strawberry *Text*
-├ ㋡ ${prefix}koifish *Text*
-├ ㋡ ${prefix}bread *Text*
-├ ㋡ ${prefix}3dbox *Text*
-├ ㋡ ${prefix}freeadvancedglow *Text*
-├ ㋡ ${prefix}honey *Text*
-├ ㋡ ${prefix}marble *Text*
-├ ㋡ ${prefix}marbleslabs *Text*
-├ ㋡ ${prefix}icecold *Text*
-├ ㋡ ${prefix}fruitjuice *Text*
-├ ㋡ ${prefix}abstragold *Text*
-├ ㋡ ${prefix}biscuit *Text*
-├ ㋡ ${prefix}bagel *Text*
-├ ㋡ ${prefix}wood *Text*
-├ ㋡ ${prefix}hexagolden *Text*
-├ ㋡ ${prefix}3ddeepseametal *Text*
-├ ㋡ ${prefix}leddisplayscreen *Text*
-├ ㋡ ${prefix}wonderfulgraffitiart *Text*
-├ ㋡ ${prefix}8bit *Text1&Text2*
-├ ㋡ ${prefix}pornhub *Text1&Text2*
-├ ㋡ ${prefix}glitch *Text1&Text2*
-├ ㋡ ${prefix}glitch2 *Text1&Text2*
-├ ㋡ ${prefix}layered *Text1&Text2*
-├ ㋡ ${prefix}3dsteel *Text1&Text2*
-├ ㋡ ${prefix}realistic *Text1&Text2*
-├ ㋡ ${prefix}lionlogo *Text1&Text2*
-├ ㋡ ${prefix}ninjalogo *Text1&Text2*
-├ ㋡ ${prefix}wolf *Text1&Text2*
-├ ㋡ ${prefix}wolf2 *Text1&Text2*
-├ ㋡ ${prefix}halloween3 *Text1&Text2*
-├ ㋡ ${prefix}marvel *Text1&Text2*
-├ ㋡ ${prefix}marvel2 *Text1&Text2*
-├ ㋡ ${prefix}cinematichorror *Text1&Text2*
-├ ㋡ ${prefix}avengers *Text1&Text2*
-├ ㋡ ${prefix}graffiti3 *Text1&Text2*
-├ ㋡ ${prefix}captainamerica *Text1&Text2*
+├ 🔰 ${prefix}blackpink *Text*
+├ 🔰 ${prefix}halloween *Text*
+├ 🔰 ${prefix}halloween2 *Text*
+├ 🔰 ${prefix}3dgradient *Text*
+├ 🔰 ${prefix}naturalleaves *Text*
+├ 🔰 ${prefix}dropwater *Text*
+├ 🔰 ${prefix}blood *Text*
+├ 🔰 ${prefix}blood2 *Text*
+├ 🔰 ${prefix}snow *Text*
+├ 🔰 ${prefix}cloud *Text*
+├ 🔰 ${prefix}neondevil *Text*
+├ 🔰 ${prefix}neon *Text*
+├ 🔰 ${prefix}glowingneonlight *Text*
+├ 🔰 ${prefix}neonlightglitch *Text*
+├ 🔰 ${prefix}neonlightonbrickwall *Text*
+├ 🔰 ${prefix}neonlight *Text*
+├ 🔰 ${prefix}neonlight2 *Text*
+├ 🔰 ${prefix}neonlight3 *Text*
+├ 🔰 ${prefix}greenneon *Text*
+├ 🔰 ${prefix}toxic *Text*
+├ 🔰 ${prefix}matrix *Text*
+├ 🔰 ${prefix}thunder *Text*
+├ 🔰 ${prefix}thunder2 *Text*
+├ 🔰 ${prefix}bokeh *Text*
+├ 🔰 ${prefix}carbontext *Text*
+├ 🔰 ${prefix}christmas *Text*
+├ 🔰 ${prefix}breakwall *Text*
+├ 🔰 ${prefix}roadwarning *Text*
+├ 🔰 ${prefix}engraved3d *Text*
+├ 🔰 ${prefix}embossed *Text*
+├ 🔰 ${prefix}3dstone *Text*
+├ 🔰 ${prefix}futuristic *Text*
+├ 🔰 ${prefix}sketch *Text*
+├ 🔰 ${prefix}bluecircuit *Text*
+├ 🔰 ${prefix}space *Text*
+├ 🔰 ${prefix}magmahot *Text*
+├ 🔰 ${prefix}artpapercut *Text*
+├ 🔰 ${prefix}3dluxurygold *Text*
+├ 🔰 ${prefix}robotr2d2 *Text*
+├ 🔰 ${prefix}harrypotter *Text*
+├ 🔰 ${prefix}glitch3 *Text*
+├ 🔰 ${prefix}greenhorror *Text*
+├ 🔰 ${prefix}horrorgift *Text*
+├ 🔰 ${prefix}hotmetal *Text*
+├ 🔰 ${prefix}erodedmetal *Text*
+├ 🔰 ${prefix}3dglowingmetal *Text*
+├ 🔰 ${prefix}blackmetal *Text*
+├ 🔰 ${prefix}bluemetal *Text*
+├ 🔰 ${prefix}shynimetal *Text*
+├ 🔰 ${prefix}rustymetal *Text*
+├ 🔰 ${prefix}metalpurple *Text*
+├ 🔰 ${prefix}metalrainbow *Text*
+├ 🔰 ${prefix}metaldarkgold *Text*
+├ 🔰 ${prefix}colorfullluxurymetal *Text*
+├ 🔰 ${prefix}glossybluemetal *Text*
+├ 🔰 ${prefix}3dglossymetal *Text*
+├ 🔰 ${prefix}metallic *Text*
+├ 🔰 ${prefix}glossymetallic *Text*
+├ 🔰 ${prefix}christmastree *Text*
+├ 🔰 ${prefix}sparklesmerrychristmas *Text*
+├ 🔰 ${prefix}countryflag3d *Text*
+├ 🔰 ${prefix}americanflag3d *Text*
+├ 🔰 ${prefix}3dscfi *Text*
+├ 🔰 ${prefix}3drainbow *Text*
+├ 🔰 ${prefix}3dwaterpipe *Text*
+├ 🔰 ${prefix}3dchrome *Text*
+├ 🔰 ${prefix}bluegem *Text*
+├ 🔰 ${prefix}purplegem *Text*
+├ 🔰 ${prefix}pinkcandy *Text*
+├ 🔰 ${prefix}transformer *Text*
+├ 🔰 ${prefix}berry *Text*
+├ 🔰 ${prefix}brokenglass *Text*
+├ 🔰 ${prefix}3drealistic *Text*
+├ 🔰 ${prefix}3dunderwater *Text*
+├ 🔰 ${prefix}writeinsandsummerbeach *Text*
+├ 🔰 ${prefix}sandwriting *Text*
+├ 🔰 ${prefix}foilballoon *Text*
+├ 🔰 ${prefix}3dglue *Text*
+├ 🔰 ${prefix}1917 *Text*
+├ 🔰 ${prefix}minion *Text*
+├ 🔰 ${prefix}doubleexposure *Text*
+├ 🔰 ${prefix}holographic3d *Text*
+├ 🔰 ${prefix}deluxegold *Text*
+├ 🔰 ${prefix}deluxesilver *Text*
+├ 🔰 ${prefix}glossycarbon *Text*
+├ 🔰 ${prefix}fabric *Text*
+├ 🔰 ${prefix}xmascards3d *Text*
+├ 🔰 ${prefix}wicker *Text*
+├ 🔰 ${prefix}fireworksparkle *Text*
+├ 🔰 ${prefix}skeleton *Text*
+├ 🔰 ${prefix}ultragloss *Text*
+├ 🔰 ${prefix}denim *Text*
+├ 🔰 ${prefix}decorategreen *Text*
+├ 🔰 ${prefix}peridot *Text*
+├ 🔰 ${prefix}rock *Text*
+├ 🔰 ${prefix}lava *Text*
+├ 🔰 ${prefix}rainbowequalizer *Text*
+├ 🔰 ${prefix}purpleglass *Text*
+├ 🔰 ${prefix}decorativeglass *Text*
+├ 🔰 ${prefix}chocolatecake *Text*
+├ 🔰 ${prefix}strawberry *Text*
+├ 🔰 ${prefix}koifish *Text*
+├ 🔰 ${prefix}bread *Text*
+├ 🔰 ${prefix}3dbox *Text*
+├ 🔰 ${prefix}freeadvancedglow *Text*
+├ 🔰 ${prefix}honey *Text*
+├ 🔰 ${prefix}marble *Text*
+├ 🔰 ${prefix}marbleslabs *Text*
+├ 🔰 ${prefix}icecold *Text*
+├ 🔰 ${prefix}fruitjuice *Text*
+├ 🔰 ${prefix}abstragold *Text*
+├ 🔰 ${prefix}biscuit *Text*
+├ 🔰 ${prefix}bagel *Text*
+├ 🔰 ${prefix}wood *Text*
+├ 🔰 ${prefix}hexagolden *Text*
+├ 🔰 ${prefix}3ddeepseametal *Text*
+├ 🔰 ${prefix}leddisplayscreen *Text*
+├ 🔰 ${prefix}wonderfulgraffitiart *Text*
+├ 🔰 ${prefix}8bit *Text1&Text2*
+├ 🔰 ${prefix}pornhub *Text1&Text2*
+├ 🔰 ${prefix}glitch *Text1&Text2*
+├ 🔰 ${prefix}glitch2 *Text1&Text2*
+├ 🔰 ${prefix}layered *Text1&Text2*
+├ 🔰 ${prefix}3dsteel *Text1&Text2*
+├ 🔰 ${prefix}realistic *Text1&Text2*
+├ 🔰 ${prefix}lionlogo *Text1&Text2*
+├ 🔰 ${prefix}ninjalogo *Text1&Text2*
+├ 🔰 ${prefix}wolf *Text1&Text2*
+├ 🔰 ${prefix}wolf2 *Text1&Text2*
+├ 🔰 ${prefix}halloween3 *Text1&Text2*
+├ 🔰 ${prefix}marvel *Text1&Text2*
+├ 🔰 ${prefix}marvel2 *Text1&Text2*
+├ 🔰 ${prefix}cinematichorror *Text1&Text2*
+├ 🔰 ${prefix}avengers *Text1&Text2*
+├ 🔰 ${prefix}graffiti3 *Text1&Text2*
+├ 🔰 ${prefix}captainamerica *Text1&Text2*
 └❏
 
 ╭─❒ ⌜ OWNER MENU ⌟ ❒
-├ ㋡ ${prefix}bc *Text*
-├ ㋡ ${prefix}bctext *Text*
-├ ㋡ ${prefix}bcgc *Text*
-├ ㋡ ${prefix}setnamebot *Text*
-├ ㋡ ${prefix}setbiobot *Text*
-├ ㋡ ${prefix}setppbot *text*
+├ 🔰 ${prefix}bc *Text*
+├ 🔰 ${prefix}bctext *Text*
+├ 🔰 ${prefix}bcgc *Text*
+├ 🔰 ${prefix}setnamebot *Text*
+├ 🔰 ${prefix}setbiobot *Text*
+├ 🔰 ${prefix}setppbot *text*
 └❏`
 Dhani.sendMessage(from, { contentText: `${menu}`, footerText: `*_© ${ownername} || 2022_*`, buttons: [{ buttonId: `${prefix}runtime`, buttonText: { displayText: '𝙍𝙐𝙉𝙏𝙄𝙈𝙀' }, type: 1 },{ buttonId: `${prefix}speed`, buttonText: { displayText: '𝙎𝙋𝙀𝙀𝘿' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [senderr,owner]}}}, 'buttonsMessage')
 break
@@ -1084,7 +1084,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/8bit?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'pornhub':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1093,7 +1093,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/pornhub?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'glitch':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1102,7 +1102,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/glitch?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'glitch2':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1111,7 +1111,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/glitch2?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'layered':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1120,7 +1120,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/layered?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case '3dsteel':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1129,7 +1129,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/3dsteel?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'realistic':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1138,7 +1138,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/realistic?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'lionlogo':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1147,7 +1147,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/lionlogo?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'ninjalogo':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1156,7 +1156,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/ninjalogo?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'wolf':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1165,7 +1165,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/logowolf?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'wolf2':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1174,7 +1174,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/logowolf2?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'halloween3':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1183,7 +1183,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/halloween3?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'marvel':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1192,7 +1192,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/marvelstudio?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'marvel2':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1201,7 +1201,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/marvelstudio2?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'cinematichorror':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1210,7 +1210,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/cinematichorror?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'avengers':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1219,7 +1219,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/avengerslogo?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'graffiti3':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1228,7 +1228,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/coolwallgraffiti?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 case 'captainamerica':
 if (args.length < 1) return reply(`*Example : ${prefix + command} Name1&Name2*`)
@@ -1237,7 +1237,7 @@ var F1 = F.split("&")[0];
 var F2 = F.split("&")[1]; 
 anu = await fetchJson(`https://apidhani.herokuapp.com/api/textpro/captainamerica?apikey=NisaaCantik&text1=${F1}&text2=${F2}`)
 buffer = await getBuffer(anu.result)
-Dhani.sendMessage(from, buffer, image, {caption: `*Nih kak dah jadi*`, quoted: mek})
+Dhani.sendMessage(from, buffer, image, {caption: `*𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐏𝐢𝐜𝐬*`, quoted: mek})
 break
 
 //━━━━[ Feature Group ]━━━━//
@@ -1245,12 +1245,12 @@ break
 case 'welcome':
 if (!isGroup) return reply(mess.only.group)
 if (args[0] === 'enable') {
-if (isWelkom) return reply('```Welcome is enable !!```')
+if (isWelkom) return reply('```Welcome is enabled !!```')
 _welkom.push(from)
 fs.writeFileSync('./database/welcome.json', JSON.stringify(_welkom))
 reply(`\`\`\`Successfully enable the welcome feature in the group\`\`\` *${groupMetadata.subject}*`)
 } else if (args[0] === 'disable') {
-if (!isWelkom) return reply('```Welcome is disable !!```')
+if (!isWelkom) return reply('```Welcome is disabled !!```')
 var ini = _welkom.indexOf(from)
 _welkom.splice(ini, 1)
 fs.writeFileSync('./database/welcome.json', JSON.stringify(_welkom))
@@ -1265,12 +1265,12 @@ if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins && !mek.key.fromMe) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (args[0] === 'enable') {
-if (isAntiLink) return reply('```Antilink is enable !!```')
+if (isAntiLink) return reply('```Antilink is enabled !!```')
 _antilink.push(from)
 fs.writeFileSync('./database/antilink.json', JSON.stringify(_antilink))
 reply(`\`\`\`Successfully enable the antilink feature in the group\`\`\` *${groupMetadata.subject}*`)
 } else if (args[0] === 'disable') {
-if (!isAntiLink) return reply('```Antilink is disable !!```')
+if (!isAntiLink) return reply('```Antilink is disabled !!```')
 var ini = _antilink.indexOf(from)
 _antilink.splice(ini, 1)
 fs.writeFileSync('./database/antilink.json', JSON.stringify(_antilink))
@@ -1476,7 +1476,7 @@ var pic = await Dhani.getProfilePicture(from)
 } catch {
 var pic = 'https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png'
 }
-let ingfo = `*G R O U P I N F O*\n\n*Name :* ${groupName}\n*ID Group :* ${from}\n*Made :* ${moment(`${groupMetadata.creation}` * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\n*Owner Group :* @${groupMetadata.owner.split('@')[0]}\n*Number of admins :* ${groupAdmins.length}\n*Number of participants :* ${groupMembers.length}\n*Welcome :* ${isWelkom ? 'Enable' : 'Disable'}\n*AntiLink :* ${isAntiLink ? 'Enable' : 'Disable'}\n*Desc :* \n\n${groupMetadata.desc}`
+let ingfo = `*G R O U P I N F O*\n\n*Name :* ${groupName}\n*ID Group :* ${from}\n*Made :* ${moment(`${groupMetadata.creation}` * 1000).tz('Africa/Nairobi').format('DD/MM/YYYY HH:mm:ss')}\n*Owner Group :* @${groupMetadata.owner.split('@')[0]}\n*Number of admins :* ${groupAdmins.length}\n*Number of participants :* ${groupMembers.length}\n*Welcome :* ${isWelkom ? 'Enable' : 'Disable'}\n*AntiLink :* ${isAntiLink ? 'Enable' : 'Disable'}\n*Desc :* \n\n${groupMetadata.desc}`
 Dhani.sendMessage(from, await getBuffer(pic), image, {quoted: mek, caption: ingfo, contextInfo: {"mentionedJid": [groupMetadata.owner.replace('@c.us', '@s.whatsapp.net')]}})
 break
 case 'resetlinkgroup':
@@ -1655,7 +1655,7 @@ fs.unlinkSync(ran)
 .toFormat('webp')
 .save(ran)
 } else {
-reply(`Kirim gambar dengan caption ${prefix}sticker\nDurasi Sticker Video 1-9 Detik`)
+reply(`please caption a video with ${prefix}sticker\nDuration 1 to 9 seconds`)
 }
 break
 case 'toimg':
@@ -1682,17 +1682,17 @@ if (isMedia && !Dhani.message.videoMessage || isQuotedImage) {
 const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 bc100 = await Dhani.downloadMediaMessage(encmedia)
 for (let _ of anu100) {
-Dhani.sendMessage(_.jid, bc100, image, {quoted: fgi, caption: `*「 BROADCAST 」*\n\n${body.slice(4)}`})
+Dhani.sendMessage(_.jid, bc100, image, {quoted: fgi, caption: `*「 𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐁𝐨𝐭 𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭 」*\n\n${body.slice(4)}`})
 }
 reply('Broadcast Success')
 } else {
 for (let _ of anu100) {
 Dhani.sendMessage(_.jid, 
-{"contentText": `*「 BROADCAST 」*\n\n${body.slice(4)}`,
+{"contentText": `*「 𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐁𝐨𝐭 𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭 」*\n\n${body.slice(4)}`,
 "footerText": `*_© ${ownername} || 2022_*\n*_${waktu}_*`,
 "buttons": [
 {"buttonId": `${prefix}menu`,
-"buttonText": {"displayText": "𝙈𝙀𝙉𝙐"
+"buttonText": {"displayText": "𝓜𝓮𝓷𝓾"
 },"type": "RESPONSE"}
 ], "headerType": 'LOCATION',
 locationMessage: { degreesLatitude: '',
@@ -1711,7 +1711,7 @@ if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 bc = await Dhani.downloadMediaMessage(encmedia)
 for (let _ of anu) {
-Dhani.sendMessage(_.jid, bc, image, { caption: `*「 BROADCAST IMAGE 」*\n\n${body.slice(7)}` })
+Dhani.sendMessage(_.jid, bc, image, { caption: `*「 𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐁𝐨𝐭 𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭」*\n\n${body.slice(7)}` })
 }
 reply('Broadcast Success')
 } else {
@@ -1728,14 +1728,14 @@ if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 bcgc = await Dhani.downloadMediaMessage(encmedia)
 for (let _ of groupMembers) {
-Dhani.sendMessage(_.jid, bcgc, image, { caption: `*「 BROADCAST GROUP 」*\n*Group* : ${groupName}\n\n${body.slice(6)}` })
+Dhani.sendMessage(_.jid, bcgc, image, { caption: `*「 𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐁𝐨𝐭 𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭」*\n*Group* : ${groupName}\n\n${body.slice(6)}` })
 }
 reply('')
 } else {
 for (let _ of groupMembers) {
-sendMess(_.jid, `*「 BROADCAST GROUP 」\n\n${body.slice(6)}`)
+sendMess(_.jid, `*「 𝐒𝐤𝐞𝐭𝐜𝐡𝐲𝐁𝐨𝐭 𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭」\n\n${body.slice(6)}`)
 }
-reply('Success broadcast group')
+reply('Success broadcasting group')
 }
 break
 case 'clearall':
