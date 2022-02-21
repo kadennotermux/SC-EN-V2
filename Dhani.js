@@ -83,23 +83,23 @@ let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: '
 let waktu = d.toLocaleDateString(locale, { hour: 'numeric', minute: 'numeric', second: 'numeric' })
 
 
-if(waktu < "23:59:00"){
+if(waktu > "23:59:00"){
 var sayingtime = 'Have a 𝘎𝘰𝘰𝘥 𝘯𝘪𝘨𝘩𝘵🌌'
 }
-if(waktu < "19:00:00"){
+if(waktu > "19:00:00"){
 var sayingtime = 'Have a Nice supper🌆'
 }
-if(waktu < "18:00:00"){
+if(waktu > "18:00:00"){
 var sayingtime = '𝘎𝘰𝘰𝘥 Evening🌇'
 }
-if(waktu < "15:00:00"){
+if(waktu > "15:00:00"){
 var sayingtime = '𝘎𝘰𝘰𝘥 Afternoon🏞'
 }
 if(waktu < "11:00:00"){
 var sayingtime = '𝘎𝘰𝘰𝘥 𝘮𝘰𝘳𝘯𝘪𝘯𝘨🌅'
 }
-if(waktu < "05:00:00"){
-var sayingtime = '𝘎𝘰𝘰𝘥 Evening🏙'
+if(waktu > "05:00:00"){
+var sayingtime = '𝘎𝘰𝘰𝘥 Morning🏙'
 }
 
 //━━━━[ Module Exports ]━━━━//
